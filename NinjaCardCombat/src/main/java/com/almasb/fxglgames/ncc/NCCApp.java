@@ -237,7 +237,7 @@ public class NCCApp extends GameApplication {
                             ))
 //                            .from(cardEntity.getPosition())
 //                            .to(cardEntity2.getPosition().add(0, 0))
-                            .buildAndPlay();
+                            .build().start();
 
                     animationBuilder()
                             .delay(Duration.seconds(0.2 + i))
@@ -249,7 +249,7 @@ public class NCCApp extends GameApplication {
                             .translate(targetEntity)
                             .from(targetEntity.getPosition())
                             .to(targetEntity.getPosition().add(2.5, 0))
-                            .buildAndPlay();
+                            .build().start();
                 }
             }
         }
